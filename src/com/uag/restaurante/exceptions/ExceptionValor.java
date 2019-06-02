@@ -1,6 +1,9 @@
 
 package com.uag.restaurante.exceptions;
 
-public class ExceptionValor {
-    
+public class ExceptionValor extends Exception{
+
+    public ExceptionValor(String str) {
+        super(str);
+    }
 }
