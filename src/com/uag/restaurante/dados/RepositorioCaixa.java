@@ -49,4 +49,14 @@ public class RepositorioCaixa implements IRepositorioCaixa{
         
         return caixa;
     }
+
+    @Override
+    public void fecharCaixa() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void abrirCaixa() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

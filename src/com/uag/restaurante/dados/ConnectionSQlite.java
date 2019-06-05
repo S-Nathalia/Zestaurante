@@ -1,4 +1,4 @@
-/*package com.uag.restaurante.dados;
+package com.uag.restaurante.dados;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,16 +10,13 @@ public class ConnectionSQlite {
 
     public static Connection getConnection() throws SQLException{
             String url = "jdbc:sqlite:db/sqlite.db";
-            System.out.println("CONECTOU!");
             return DriverManager.getConnection(url);
     }
 
    public static void connect() {
         Connection conn = null;
         try {
-            // db parameters
             String url = "jdbc:sqlite:db/sqlite.db";
-            // create a connection to the database
             conn = DriverManager.getConnection(url);
 
             System.out.println("Connection to SQLite has been established.");
@@ -38,10 +35,8 @@ public class ConnectionSQlite {
         }
     }
     public static void createNewTable() {
-        // SQLite connection string
         String url = "jdbc:sqlite:db/sqlite.db";
 
-        // SQL statement for creating a new table
         String sql = "CREATE TABLE IF NOT EXISTS warehouses (\n"
                 + "	id integer PRIMARY KEY,\n"
                 + "	name text NOT NULL,\n"
@@ -50,7 +45,6 @@ public class ConnectionSQlite {
 
         try (Connection conn = DriverManager.getConnection(url);
                 Statement stmt = conn.createStatement()) {
-            // create a new table
             stmt.execute(sql);
 
 
@@ -60,4 +54,3 @@ public class ConnectionSQlite {
         }
     }
 }
-*/

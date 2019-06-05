@@ -2,7 +2,6 @@ package com.uag.restaurante.dados;
 
 import com.uag.restaurante.entidades.Mesa;
 import java.util.ArrayList;
-import com.uag.restaurante.dados.IRepositorioMesa;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

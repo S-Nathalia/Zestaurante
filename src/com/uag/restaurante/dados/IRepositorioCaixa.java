@@ -5,4 +5,6 @@ import java.util.ArrayList;
 
 public interface IRepositorioCaixa {
     public ArrayList<Caixa> dadosCaixa();
+    public void fecharCaixa();
+    public void abrirCaixa();
 }
