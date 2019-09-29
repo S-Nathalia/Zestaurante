@@ -5,5 +5,7 @@
 #### UAG/UFRPE
 ---
 Esse projeto tem como princípio desenvolver um software para um **restaurante**.
+
+<DESCONTINUADO!>
 <br>
 :]
